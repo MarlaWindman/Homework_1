@@ -34,3 +34,8 @@ def test_6_state_tax():
     tests = main.mass_tax(list)
     assert tests == 8.5
 
+def test_7_get_items():
+    dic = dec = {'Wic Eligible food': ["apple" ,"breed", "breed"], "Clothing":["pants"]}
+    test = main.get_item(dic)
+    assert test == ["apple" ,"breed", "breed","pants"]
+

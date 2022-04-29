@@ -57,6 +57,14 @@ def item_price(probuct):
             sum.append(item[items])
     return sum
 
+def get_item(dic):
+    sum = []
+    for item in dic:
+        for profucts in dic[item]:
+            sum.append(profucts)
+    return sum
+
+
 
 #state,item_dic
 
