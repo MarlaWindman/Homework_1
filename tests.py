@@ -28,3 +28,9 @@ def test_5_check_state():
     test = main.check_state(states)
     assert test == "good"
 
+def test_6_state_tax():
+    items = ["apple","apple"]
+    list = main.item_price(items)
+    tests = main.mass_tax(list)
+    assert tests == 8.5
+
