@@ -31,21 +31,21 @@ def in_dec(item_dic):
 def check_state(state):
     item = None
     test = ["Massachusetts","New Hampshire","Maine"]
-    for items in range(0,len(test)):
-        if state not in test:
+    for items in range(0,len(state)):
+        if state[items] not in test:
             return item
         item = "good"
     return item
 
 
 def item_price(probuct):
-    sum = 0
+    sum = []
     item = {"apple":4,"banna":2,"breed":3,"shirt":13,"pants":12,"stuffy":8,"cup":6}
     for items in probuct:
         if items not in item:
             return None
         else:
-            sum += item[items]
+            sum.append(item[items])
     return sum
 
 

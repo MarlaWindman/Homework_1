@@ -21,4 +21,10 @@ def test_3_not_goods():
 def test_4_item_cost():
     items = ["apple","apple"]
     test = main.item_price(items)
-    assert test == 8
+    assert test == [4,4]
+
+def test_5_check_state():
+    states = ["Massachusetts"]
+    test = main.check_state(states)
+    assert test == "good"
+
