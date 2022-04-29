@@ -10,7 +10,16 @@ def mass_tax(item_list):
 
 def NH_tax(item_list):
     price = 0
-    tax = 6.25
+    tax = 0
+    for items in item_list:
+        price += items
+    price_dif = price * (tax / 100)
+    total = price + price_dif
+    return total
+
+def Maine_tax(item_list):
+    price = 0
+    tax = 5.5
     for items in item_list:
         price += items
     price_dif = price * (tax / 100)
