@@ -38,6 +38,15 @@ def check_state(state):
     return item
 
 
+def item_price(probuct):
+    sum = 0
+    item = {"apple":4,"banna":2,"breed":3,"shirt":13,"pants":12,"stuffy":8,"cup":6}
+    for items in probuct:
+        if items not in item:
+            return None
+        else:
+            sum += item[items]
+    return sum
 
 
 #state,item_dic
